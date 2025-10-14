@@ -6,7 +6,7 @@ from .settings import BASE_DIR
 ALLOWED_HOSTS = [os.environ.get('RENDER_EXTERNAL_HOSTNAME')]
 CSRF_TRUSTED_ORIGINS = ['https://'+os.environ.get('RENDER_EXTERNAL_HOSTNAME')]
 
-DEBUG = False
+DEBUG = True
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 MIDDLEWARE = [
@@ -63,12 +63,12 @@ LOGGING = {
 
 
 
-ADMINS = [("CBI Analytics", "YOUREMAIL@EMAIL.com")]
+ADMINS = [("CBI Analytics", "juanperu2006@gmail.com")]
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-EMAIL_HOST_USER = os.environ.get('EMAIL_USER')
-EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_PASSWORD')
+EMAIL_HOST_USER = os.environ.get('john.towers.candle@gmail.com')
+EMAIL_HOST_PASSWORD = os.environ.get('higinio2015')
 DEFAULT_FROM_EMAIL = 'default from email'
